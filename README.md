@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Santhosh-0031/escrow-payment-system/blob/main/assets/stripeConnect.png?raw=true" alt="TrustVault Logo" width="120" />
+  <img src="https://github.com/Santhosh-0031/escrow-payment-system/blob/main/assets/stripeConnect.png?raw=true" alt="SafePay Logo" width="120" />
 </p>
 
 <h1 align="center">SafePay: A Smart Escrow Layer for Digital Payments
@@ -27,9 +27,9 @@
 
 ## 📌 Overview
 
-**TrustVault** is a production-ready escrow payment platform designed to eliminate transactional risk between buyers and sellers. Payments are securely held in escrow for a configurable period (default: 48 hours) and automatically released to the seller only after the hold window expires — ensuring complete peace of mind for both parties.
+**SafePay** is a production-ready escrow payment platform designed to eliminate transactional risk between buyers and sellers. Payments are securely held in escrow for a configurable period (default: 48 hours) and automatically released to the seller only after the hold window expires — ensuring complete peace of mind for both parties.
 
-Whether you're building a marketplace, a freelance platform, or a rental service, TrustVault provides the financial trust layer your users deserve.
+Whether you're building a marketplace, a freelance platform, or a rental service, SafePay provides the financial trust layer your users deserve.
 
 ---
 
@@ -175,7 +175,7 @@ The application will be available at `http://localhost:3000` by default.
 
 ## 🔮 Future Enhancements
 
-The roadmap for TrustVault includes the following planned capabilities:
+The roadmap for SafePay includes the following planned capabilities:
 
 - 🤖 **AI-Powered Fraud Detection** — Real-time transaction anomaly detection using machine learning models
 - ⛓️ **Blockchain Audit Trail** — Immutable, on-chain transaction records for maximum transparency
