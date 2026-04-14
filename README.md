@@ -1,106 +1,197 @@
-# 💸 Escrow Payment Platform
+<p align="center">
+  <img src="https://github.com/Santhosh-0031/escrow-payment-system/blob/main/assets/stripeConnect.png?raw=true" alt="TrustVault Logo" width="120" />
+</p>
 
-## 🔐 Introduction
-This web application provides a secure platform for processing escrow payments. It allows buyers to make payments that are held for 2 days before being released to sellers. The platform ensures trust between buyers and sellers by mediating payments securely.
+<h1 align="center">TrustVault — Escrow Payment Platform</h1>
+
+<p align="center">
+  <strong>Secure. Transparent. Trustworthy.</strong><br/>
+  A modern escrow payment infrastructure that holds funds safely and releases them only when both parties are satisfied.
+</p>
+
+<p align="center">
+  <a href="#">🚀 View Demo</a> •
+  <a href="https://github.com/Santhosh-0031/escrow-payment-system/issues">🐛 Report Bug</a> •
+  <a href="https://github.com/Santhosh-0031/escrow-payment-system/issues">✨ Request Feature</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" alt="Version" />
+  <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square" alt="Status" />
+  <img src="https://img.shields.io/badge/license-MIT-orange?style=flat-square" alt="License" />
+  <img src="https://img.shields.io/badge/PRs-welcome-blueviolet?style=flat-square" alt="PRs Welcome" />
+</p>
 
 ---
 
-## ✨ Features
-- **🔒 Escrow Payments:** Automatically hold payments for a specified duration (default: 2 days) before releasing them to sellers.
-- **💳 Stripe Integration:** Built-in Stripe payment processing for seamless transactions.
-- **🔑 User Authentication:** Secure login/signup system for buyers and sellers.
-- **💰 Seller Payouts:** Automate payouts to seller accounts after the hold period.
-- **📊 Dashboard:** User-friendly dashboards for buyers and sellers to manage transactions.
-- **🛠️ Admin Controls:** Admins can view, manage, and audit all transactions.
+## 📌 Overview
+
+**TrustVault** is a production-ready escrow payment platform designed to eliminate transactional risk between buyers and sellers. Payments are securely held in escrow for a configurable period (default: 48 hours) and automatically released to the seller only after the hold window expires — ensuring complete peace of mind for both parties.
+
+Whether you're building a marketplace, a freelance platform, or a rental service, TrustVault provides the financial trust layer your users deserve.
 
 ---
 
-## 🛠️ Use Cases
-1. **🛍️ Marketplaces:**
-   - Facilitate secure transactions in e-commerce platforms by holding payments until the buyer confirms the delivery.
-2. **👨‍💻 Freelance Platforms:**
-   - Mediate payments between clients and freelancers to ensure work is completed before releasing funds.
-3. **🏠 Rental Services:**
-   - Hold payments for services or items rented, releasing them after a satisfactory return or service completion.
-4. **🎟️ Event Ticketing:**
-   - Secure payments for event bookings, holding funds until the event has concluded.
+## ✨ Core Features
+
+| Feature | Description |
+|---|---|
+| 🔒 **Smart Escrow Holds** | Automatically hold buyer payments for a configurable duration before releasing funds to sellers |
+| 💳 **Stripe Integration** | Seamless, production-grade payment processing powered by the Stripe API |
+| 🔑 **Secure Authentication** | JWT-based login and signup system with role-based access for buyers, sellers, and admins |
+| 💰 **Automated Seller Payouts** | Funds are disbursed to seller accounts automatically once the hold period concludes |
+| 📊 **Role-Based Dashboards** | Dedicated, intuitive dashboards for buyers, sellers, and administrators |
+| 🛡️ **Admin Control Panel** | Full visibility into all transactions with audit, management, and override capabilities |
+
+---
+
+## 🌍 Real-World Use Cases
+
+### 🛍️ E-Commerce Marketplaces
+Hold buyer payments until delivery is confirmed, drastically reducing fraud and disputes on marketplace platforms.
+
+### 👨‍💻 Freelance & Gig Platforms
+Guarantee fair outcomes for both clients and freelancers — funds are only released after work milestones are verified and approved.
+
+### 🏠 Rental & Leasing Services
+Securely hold rental deposits and service payments, releasing them only after the item is returned or the service is completed satisfactorily.
+
+### 🎟️ Event Ticketing & Bookings
+Protect buyers by holding event payments in escrow until the event concludes, with automatic refund logic for cancellations.
 
 ---
 
 ## 🖥️ Tech Stack
-- **🖌️ Frontend:** React, Tailwind CSS
-- **🔧 Backend:** Node.js, Express.js
-- **📦 Database:** MongoDB
-- **💳 Payments:** Stripe API
-- **🔐 Authentication:** JSON Web Tokens (JWT)
+
+| Layer | Technology |
+|---|---|
+| **Frontend** | React, Tailwind CSS |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB |
+| **Payments** | Stripe API |
+| **Authentication** | JSON Web Tokens (JWT) |
 
 ---
 
-## 🚀 Installation
+## 🚀 Getting Started
 
-### 📋 Prerequisites
-- Node.js and npm installed
-- MongoDB database
-- Stripe account
+### Prerequisites
 
-###  🛠️ Steps
-#### Clone the repository:
-```
-   git clone https://github.com/Keval9247/escrow-payments-app.git
-   cd escrow-payments-app
-```
-#### Install dependencies:
-#### For Frontend :
-```
-cd frontend
-npm install 
-```
-#### For Backend :
-```
-cd backend
-npm install 
+Ensure the following are installed and configured before proceeding:
+
+- [Node.js](https://nodejs.org/) (v18+) and npm
+- A running [MongoDB](https://www.mongodb.com/) instance (local or Atlas)
+- A [Stripe](https://stripe.com/) account with API keys
+
+---
+
+### 🛠️ Installation
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Santhosh-0031/escrow-payment-system.git
+cd escrow-payment-system
 ```
 
-#### Set up environment variables: Create a .env file in the root directory with the following keys:
-```
-SESSION_SECRET=your-session-secret
-STRIPESECRETKEY=your-stripe-secret-key
-DATABASE_URL=your-mongodb-connection-url
+#### 2. Install Dependencies
+
+**Backend:**
+```bash
+cd server
+npm install
 ```
 
-#### Run the application:
-- for Frontend :  
+**Frontend:**
+```bash
+cd client
+npm install
 ```
+
+---
+
+### ⚙️ Environment Variables
+
+Create a `.env` file in the `server/` directory and populate it with the following:
+
+```env
+# Server
+PORT=5000
+
+# Database
+MONGO_URI=your_mongodb_connection_string
+
+# Authentication
+JWT_SECRET=your_jwt_secret_key
+
+# Stripe
+STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+```
+
+> ⚠️ **Never commit your `.env` file to version control.** Add it to `.gitignore`.
+
+---
+
+### ▶️ Running the Application
+
+**Start the backend server:**
+```bash
+cd server
 npm run dev
 ```
-- for Backend : 
+
+**Start the frontend client:**
+```bash
+cd client
+npm start
 ```
-npm run start
-```
 
+The application will be available at `http://localhost:3000` by default.
 
-Access the application at **http://localhost:5173** .
-
-## 🎥 Demo Video
-
-#### Watch the video walkthrough to see the platform in action:
-
-[![Watch the Demo](./assets/stripeConnect.png)](./assets/stripeConnectDemo.mp4)
-
-> 📹 Click the above image or [download the demo video](./assets/stripeConnectDemo.mp4) to see the application in action.
-
+---
 
 ## 📸 Screenshots
-### 🛒 Buyer Dashboard
-![Buyer Dashboard](./assets/stripeConnectUser.png)
 
-### 🛍️ Seller Dashboard
-![Seller Dashboard](./assets/stripeConnectSeller.png)
+<p align="center">
+  <img src="https://github.com/Santhosh-0031/escrow-payment-system/blob/main/assets/stripeConnectUser.png?raw=true" alt="Dashboard Preview - connect user" width="80%" />
+</p>
 
+<p align="center">
+  <img src="https://github.com/Santhosh-0031/escrow-payment-system/blob/main/assets/stripeConnectSeller.png?raw=true" alt="Payment Flow - connect seller" width="80%" />
+</p>
 
+---
+## 🎥 Demo Video
 
-## 📜 License
+<p align="center">
+  <a href="https://github.com/Santhosh-0031/escrow-payment-system/blob/main/assets/stripeConnectDemo.mp4">
+    <img src="./assets/stripeConnect.png" width="600"/>
+  </a>
+</p>
 
-This extension is licensed under the 
-[MIT License](https://choosealicense.com/licenses/mit/).
+---
 
+## 🔮 Future Enhancements
+
+The roadmap for TrustVault includes the following planned capabilities:
+
+- 🤖 **AI-Powered Fraud Detection** — Real-time transaction anomaly detection using machine learning models
+- ⛓️ **Blockchain Audit Trail** — Immutable, on-chain transaction records for maximum transparency
+- 🌐 **Multi-Currency Support** — Cross-border payments with automatic currency conversion
+- 📱 **Mobile Application** — Native iOS and Android apps for on-the-go transaction management
+- 🔔 **Smart Notifications** — Real-time email and push notifications for payment lifecycle events
+- 🧩 **API-First Architecture** — Public REST API with developer documentation for third-party integrations
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for full details.
+
+---
+
+<p align="center">
+  Built with ❤️ by <a href="https://github.com/Santhosh-0031">Santhosh</a> · 
+  <a href="https://github.com/Santhosh-0031/escrow-payment-system">GitHub Repository</a>
+</p>
