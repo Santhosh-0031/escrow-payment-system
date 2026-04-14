@@ -2,7 +2,8 @@
   <img src="https://github.com/Santhosh-0031/escrow-payment-system/blob/main/assets/stripeConnect.png?raw=true" alt="TrustVault Logo" width="120" />
 </p>
 
-<h1 align="center">TrustVault — Escrow Payment Platform</h1>
+<h1 align="center">SafePay: A Smart Escrow Layer for Digital Payments
+</h1>
 
 <p align="center">
   <strong>Secure. Transparent. Trustworthy.</strong><br/>
