@@ -98,13 +98,13 @@ cd escrow-payment-system
 
 **Backend:**
 ```bash
-cd server
+cd backend
 npm install
 ```
 
 **Frontend:**
 ```bash
-cd client
+cd frontend
 npm install
 ```
 
@@ -135,15 +135,15 @@ STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
 
 ### ▶️ Running the Application
 
-**Start the backend server:**
+**Start the frontend server:**
 ```bash
-cd server
+cd frontend
 npm run dev
 ```
 
-**Start the frontend client:**
+**Start the backend client:**
 ```bash
-cd client
+cd backend
 npm start
 ```
 
