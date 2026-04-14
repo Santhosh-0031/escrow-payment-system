@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="#">🚀 View Demo</a> •
+  <a href="#">🚀 View Demo </a> •
   <a href="https://github.com/Santhosh-0031/escrow-payment-system/issues">🐛 Report Bug</a> •
   <a href="https://github.com/Santhosh-0031/escrow-payment-system/issues">✨ Request Feature</a>
 </p>
